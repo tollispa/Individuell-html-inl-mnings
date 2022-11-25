@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/tollispapadopou/assets/style.css">
+    <link rel="stylesheet" href="/tollispapadopou/assets/style.scss">
+</head>
+<body>
+    <div>
+        <div class="text-center" style="font-size: 20px; padding-right: 30%;">
+            <h1>Om oss</h1>
+        </div>
+
+        <div class="row">
+            <div class="column left">
+                <div class="displayCol">
+                    <a href="/tollispapadopou/pages/index.html">Hem</a>
+                    <a href="/tollispapadopou/pages/index2.html">Alla Event &#x279D;</a>
+                    <a href="/tollispapadopou/pages/index4.html">Skapa Event &#x279D;</a>
+                    <a href="#">Om oss</a>
+
+                </div>
+            </div>
+            <div class="column right">
+                <div class="row">
+                    <p><b>Om företaget</b></p>
+                    <p>Företaget grundades 1967 av Olof den trejde och har gått i generationer inom familjen.</p>
+                    <details>
+                        <summary>Mer info om teamet</summary>
+                        <p style="font-family: cursive; font-size: 16px; color:rgb(77, 77, 250);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime officiis inventore quam tenetur minima debitis odit veniam laudantium! Nobis adipisicing elit. Maxime officiis inventore quam tenetur minima , dolores.</p>
+                 </details>
+
+                    <p><b>Om teamet</b></p>
+                    <p>Vi är en grupp på 10 personer som gillar att hjälpa företagen få de perfekta eventen enligt önskemål</p>
+                   <details>
+                          <summary>Mer info om teamet</summary>
+                          <p style="font-family: cursive; font-size: 16px; color:rgb(77, 77, 250);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit ducimus necessitatibus ex iusto  Vitae suscipit ducimus necessitatibus ex iustoenim?</p>
+                   </details>
+                    
+                    <p><b>Om VD</b></p>
+                    <p>Vår VD sätter upp våra mål och ambitioner, samt säkerställer att projekten alltid lämnas i perfektion</p>
+                    <details>
+                        <summary>Mer info om VD</summary>
+                        <p style="font-family: cursive; font-size: 16px; color:rgb(77, 77, 250);">Namn: Olof Palme <br>Ålder: 40 <br>Längd: 186cm<br>Favoritfrukt: Banan</p>
+                 </details>
+                    
+  
+                    
+                </div>
+                <div style="display: flex; justify-content: space-evenly" class="row-vd">
+                   
+                    <div class="card-vd">
+                        <img class="cardImg-vd" src="/tollispapadopou/assets/img/avatar.png" height="200px" style="width: 100%;" />
+                        <div class="container-vd">
+                            <p><b>Olof Palme</b></p>
+                            <a href="tel:0123456789"><b>+469203341</b></a>
+                            <a href="mailto:Palme@gmail.com"><b>Palme@live.se</b></a>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div style="display: flex;" class="row m-1">
+                   
+                    <div class="card-team">
+                        <img class="cardImg" id="teamImg" src="/tollispapadopou/assets/img/offc.avif" height="200px" style="width: 300%" />
+                      
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="contact-form2">
+                   
+                        <label for ="name">Namn</label>
+                        <input  class="removeThis"type ="text" id="text-box-1" name ="fullname" placeholder="">
+                        <br> <label for ="name">Mail</label>
+                       <input class="removeThis1" type ="text" id="text-box-2" name ="fullname" placeholder="">
+                       <br> <label for ="name">Meddelande</label>
+                       
+                       <input class="removeThis2" type ="text" id="text-box-3" name ="fullname" placeholder="">
+                       <br><button class="removeText">Skicka</button>
+                       
+                    
+                    
+                    </form>
+                    <p class="infotext">Tack för ditt meddelande. Vi återkommer så fort vi kan.</p>
+                   </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        const knapp = document.querySelector(".removeText");
+  let infotex = document.querySelector(".infotext");
+  let form = document.querySelector(".contact-form2");
+  knapp.addEventListener("click", function (event) {
+    event.preventDefault();
+    form.style.display = "none";
+  infotex.style.display = "block";
+  });
+      </script>
+</body>
+</html>
